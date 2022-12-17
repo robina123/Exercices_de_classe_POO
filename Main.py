@@ -48,3 +48,8 @@ class Hero:
 
     def recevoir_dommages(self):
         self.point_de_vie -= random.randint(1, 6) + self.defense
+
+    def est_vivant(self):
+        if self.point_de_vie > 0:
+            return True
+        return False
