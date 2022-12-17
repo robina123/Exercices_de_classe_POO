@@ -1,23 +1,26 @@
 from math import pi
 import random
+
+
 class StringFoo:
     def __init__(self):
         self.string = "a"
+
     def set_string(self, string):
         self.string = string
+
     def print_string(self):
         print(self.string.upper())
-
-t = StringFoo()
-print(t.string.upper())
 
 
 class Rectangle:
     def __init__(self, largeur, longueur):
         self.largeur = largeur
         self.longueur = longueur
+
     def calcul_aire(self):
         return self.largeur * self.longueur
+
     def afficher_infos(self):
         print("largeur: ", self.largeur, "longueur: ", self.longueur, "aire: ", self.calcul_aire())
 
@@ -25,10 +28,13 @@ class Rectangle:
 class Cercle:
     def __init__(self, rayon):
         self.rayon = rayon
+
     def calcul_aire(self):
         return pi * self.rayon ** 2
+
     def calcul_circonference(self):
         return 2 * pi * self.rayon
+
 
 class Hero:
     def __init__(self, nom):
